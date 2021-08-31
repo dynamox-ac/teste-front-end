@@ -10,12 +10,22 @@ export const HeaderDiv = styled.header`
   justify-content: space-between;
 
   background: #263252;
+
+  @media (max-width:650px){
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 140px;
+  }
 `;
 export const Logo = styled.img`
   
   margin-left: 77px;
   width: 172.86px;
   height: 65.15px;
+
+  @media (max-width: 650px){
+    margin: 0;
+  }
 `;
 
 export const Row = styled.div`
@@ -34,4 +44,5 @@ export const Link = styled.a`
   letter-spacing: 0em;
   text-align: left;
   color: #FFFFFF;
+  text-decoration: none;
 `;

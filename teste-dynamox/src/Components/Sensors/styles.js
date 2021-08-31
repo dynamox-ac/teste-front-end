@@ -30,6 +30,11 @@ export const Section = styled.section`
     text-align: center;
 
     color: #454545;
+
+    @media (max-width: 1200px){
+      flex-direction: column;
+      padding: 0 50px;
+    }
   }
 
   button{
@@ -56,6 +61,10 @@ export const Row = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  @media (max-width: 1200px){
+    flex-direction: column;
+  }
 `
 
 export const Img = styled.div`
@@ -76,6 +85,10 @@ export const Img = styled.div`
     line-height: 47px;
 
     color: #5D7A8C;
+
+    @media (max-width: 1200px){
+      margin:10px;
+    }
   }
 
 `

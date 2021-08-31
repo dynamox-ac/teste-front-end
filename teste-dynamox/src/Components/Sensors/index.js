@@ -11,13 +11,13 @@ import tca from '../../img/sensor-tca.png';
 export default function Sensors() {
   return (
     
-      <Section>
-        <h1>Sensores para Manutenção Preditiva</h1>
+      <Section >
+        <h1 id="sec1">Sensores para Manutenção Preditiva</h1>
         <p>Opções de sensores sem fio, ou DynaLoggers com sensores de vibração triaxial e
 temperatura embarcados, que comunicam por Bluetooth com o App mobile ou Gateway,
 registrando os dados monitorados em sua memória interna. Por conexão internet esses dados
 são centralizados na Plataforma DynaPredict Web para análise, prognóstico e tomada de decisão.</p>
-        <button>VER MAIS</button>
+        <a href="https://dynamox.net/dynapredict/"><button>VER MAIS</button></a>
         <Row>
           <Img>
             <img src={tca} alt="" />

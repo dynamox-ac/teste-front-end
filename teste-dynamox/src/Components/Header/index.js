@@ -8,11 +8,11 @@ import logo from '../../img/logo-dynamox.png'
 export default function Header() {
   return (
     <HeaderDiv>
-      <Logo src={logo} alt="" />
+      <a href="https://dynamox.net/"><Logo src={logo} alt="" onClick /></a>
       <Row>
-        <Link>DynaPredict</Link>
-        <Link>Sensores</Link>
-        <Link>Contato</Link>
+        <Link href="https://dynamox.net/dynapredict/">DynaPredict</Link>
+        <Link href="#sec1">Sensores</Link>
+        <Link href="#sec2">Contato</Link>
       </Row>
       
     </HeaderDiv>

@@ -8,7 +8,7 @@ import { Section } from './styles.js';
 export default function Footer() {
   return (
     
-      <Section>
+      <Section id="sec2">
         <p>Ficou com dúvida?</p>
         <p>Nós entramos em contato com você</p>
 

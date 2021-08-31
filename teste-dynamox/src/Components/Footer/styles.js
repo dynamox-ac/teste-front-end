@@ -10,6 +10,13 @@ export const Section = styled.section`
   align-items: center;
   background: #263252;
   padding: 40px;
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
     
   p {
     font-style: normal;

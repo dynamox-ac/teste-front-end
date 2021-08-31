@@ -13,7 +13,7 @@ export const BodyDiv = styled.div`
 export const Background = styled.section`
     display: flex;
     flex-direction: row;
-    padding-bottom: 7.4%;
+    padding-bottom: 12.4%;
     
     position: relative;
     background-repeat: no-repeat;

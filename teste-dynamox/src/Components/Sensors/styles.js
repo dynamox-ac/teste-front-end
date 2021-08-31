@@ -66,7 +66,7 @@ export const Img = styled.div`
 
   img {
     width: 276.83px;
-    height: 297.84px;
+    
   }
 
   p {

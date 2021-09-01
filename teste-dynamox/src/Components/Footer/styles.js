@@ -70,6 +70,11 @@ export const Section = styled.section`
     line-height: 23px;
 
     color: #FFFFFF;
+
+    :hover{
+      background: #0165ff;
+      cursor: pointer;
+    }
   }
 
 

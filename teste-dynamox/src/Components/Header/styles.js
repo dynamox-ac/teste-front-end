@@ -45,4 +45,8 @@ export const Link = styled.a`
   text-align: left;
   color: #FFFFFF;
   text-decoration: none;
+  
+  :hover {
+    text-decoration: underline;
+  }
 `;

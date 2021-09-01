@@ -53,6 +53,11 @@ export const Section = styled.section`
     line-height: 23px;
 
     color: #FFFFFF;
+
+    :hover{
+      background: #263260;
+      cursor: pointer;
+    }
   }
 `;
 

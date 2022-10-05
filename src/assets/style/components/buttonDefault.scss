@@ -1,0 +1,47 @@
+.btn-default {
+    width: 185px;    
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    color: $text-color01;
+    text-transform: uppercase;
+
+    &.btn-primary {
+        background-color: $primary-color;
+        background-position: center;
+        transition: background 0.8s;
+    
+        &:hover{
+            background: $primary-color-hover radial-gradient(circle, transparent 1%, $primary-color-hover 1%) center/15000%;
+        }
+    
+        &:active{
+            background-color: $primary-color-wave;
+            background-size: 100%;
+            transition: background 0s;
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $secondary-color;
+        background-position: center;
+        transition: background 0.8s;
+    
+        &:hover{
+            background: $secondary-color-hover radial-gradient(circle, transparent 1%, $secondary-color-hover 1%) center/15000%;
+        }
+    
+        &:active{
+            background-color: $secondary-color-wave;
+            background-size: 100%;
+            transition: background 0s;
+        }
+    }
+
+    
+}

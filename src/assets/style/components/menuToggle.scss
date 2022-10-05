@@ -1,0 +1,132 @@
+.menuBtn {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background: $primary-color;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+
+    span {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: $text-color01;
+        border-radius: 4px;
+        transition: 0.5s;
+
+        &:nth-child(1) {
+            transform: translateY(-7.5px);
+            width: 12.5px;
+            left: 7.5px;
+        }
+
+        &:nth-child(2) {
+            transform: translateY(7.5px);
+            width: 7.5px;
+            left: 7.5px;
+        }
+    }
+
+    &.active {
+
+        span {
+
+            &:nth-child(1) {
+                transform: translateY(0px) rotate(45deg);
+                width: 20px;
+                transition-delay: 0.125s;
+            }
+
+            &:nth-child(2) {
+                transform: translateY(0px) rotate(315deg);
+                width: 20px;
+                transition-delay: 0.25s;
+            }
+
+            &:nth-child(3) {
+                transform: translatex(60px);
+                width: 20px;
+                left: 7.5px;
+            }
+        }
+    }
+}
+
+
+
+
+.menu-mobile {
+    width: 100vw;
+    height: 100vh;
+    top: 120px;
+    right: 0;
+    position: fixed;
+    z-index: 2;
+    background-color: $primary-color;
+    box-sizing: border-box;
+    padding: 0 2.5rem;
+    animation: close 1s;
+    transition: .5s;
+    visibility: hidden;
+
+    &.active {
+        visibility: visible;
+    animation: open 1s;
+    }
+
+    .nav-mobile {
+
+        .nav_list {
+            align-items: flex-start;
+            flex-direction: column;
+
+            .nav_item {
+                margin: 1.2rem 0;
+
+                .nav_link {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    color: $text-color01;
+                
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes open {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes close {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100vw);
+    }
+}
+
+@media screen and (min-width: 671px) {
+    .menuBtn {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+}

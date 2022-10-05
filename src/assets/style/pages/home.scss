@@ -1,0 +1,180 @@
+/* Introduction Section */
+
+.introduction {
+  height: 720px;
+  background-image: url("../../images/grafismo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .introduction-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .info{
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 80px;
+        font-weight: 700;
+        color: $text-color01;
+        margin-bottom: 2rem;
+      }
+
+      .logo {
+        width: 130px;
+      }
+
+      @media screen and (max-width: 960px) {
+        h1 {
+          font-size: 55px;
+        } 
+      }
+
+      @media screen and (max-width: 420px) {
+        h1 {
+          font-size: 45px;
+        } 
+      }
+    }
+
+    .image-block {
+      max-width: 690px;
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 670px) {
+
+    background-position: left;
+
+    .introduction-content {
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+  
+      .image-block {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+/* Sensors Section */
+
+.sensors {
+  background-color: $bg-body;
+  padding: 3rem 0;
+
+  .sensors-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h2{
+      color: $text-color02;
+      font-weight: 700;
+      font-size: 40px;
+    }
+  
+    p {
+      font-size: 24px;
+      font-weight: 400;
+      color: $text-color03;
+      margin: 1rem 0 2rem;
+    }
+  
+    .sensors-block {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  
+      .sensors-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  
+        img {
+          max-width: 275px;
+          margin: 2rem 0 1rem;
+        }
+  
+        h3 {
+          color: $text-color04;
+          font-size: 40px;
+          font-weight: 700;
+
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* Contact Section */
+
+.contact {
+  background-color: $primary-color;
+
+  .contact-content {
+    padding: 2.5rem 0;
+
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+      color: $text-color01;
+
+    }
+
+    .contact-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 1.5rem;
+
+      .contact-input {
+        width: 100%;
+        max-width: 426px;
+        height: 41px;
+        border: none;
+        border-radius: 5px;
+        background-color: $bg-body;
+        font-size: 1rem;
+        font-weight: 400;
+        color: $text-color04;
+        text-align: center;
+        margin-bottom: .8rem;
+
+        &.danger {
+          border: 1px solid $danger-color;
+
+          &::placeholder {
+            color: $danger-color;
+          }
+        }
+      }
+
+      button {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}

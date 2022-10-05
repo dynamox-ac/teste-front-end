@@ -3,7 +3,7 @@ import './footer.css';
 
 export default function Footer() {
   return (
-    <footer className='text-align footer'>
+    <footer className='text-align footer' id='footer'>
       <div className="row">
         <div className="col-12 text mt-5">
           <div className="text">

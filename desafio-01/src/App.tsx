@@ -4,16 +4,16 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './core/components/footer/Footer';
 import Header from './core/components/header/Header';
-import CompanyPresentation from './core/views/company-presentation/Company-presentation';
-import ProductPresentation from './core/views/product-presentation/product-presentation';
+import DynaPredict from './core/views/dynapredict/dynapredict';
+import Sensors from './core/views/sensors/sensors';
 
 
 function App() {
   return (
     <div className="main">
       <Header></Header>
-      <CompanyPresentation></CompanyPresentation>
-      <ProductPresentation></ProductPresentation>
+      <DynaPredict></DynaPredict>
+      <Sensors></Sensors>
       <Footer></Footer>
     </div>
     // <div className="App">

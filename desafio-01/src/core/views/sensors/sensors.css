@@ -1,0 +1,51 @@
+
+
+.content-product{
+  height: 720px;
+  width: 100vw;
+  margin-top: 4vh;
+}
+
+.sensors-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: black;
+  margin-top: 8vh;
+}
+
+.title-sensors{
+  color: #37383D;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.text-sensors{
+  color: #454545;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.btn-more{
+  background-color: #263252;
+  color: #FFFFFF;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  width: 183px;
+  height: 39px;
+  border-radius: 5px;
+  border: none;
+}
+
+.sensors{
+  width: 18vw;
+  margin: 1vw;
+}

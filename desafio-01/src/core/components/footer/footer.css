@@ -28,6 +28,9 @@ input{
 .btn-send{
   background-color: #0165DB;
   color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
   width: 183px;
   height: 39px;
   border-radius: 5px;

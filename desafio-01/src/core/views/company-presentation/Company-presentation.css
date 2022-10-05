@@ -1,0 +1,46 @@
+
+.content-company{
+  height: 720px;
+  width: 100vw;
+}
+
+.bg-img{
+  height: 100vh;
+  background: url('../../../assets/imgs/grafismo.png') no-repeat 0vw center;
+  }
+
+.computer{
+  width: 56vw;
+}
+
+@media (max-width: 30em){
+  .computer{
+    width: 55vw;
+  }
+
+  h1{
+    font-size: 1vw;
+  }
+  
+}
+
+
+.headline{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 20vh;
+  margin-left: 6vw;
+}
+
+h1{
+  font-size: 5.6vw;
+  font-weight: 700;
+  font-family: 'Raleway';
+  font-style: normal;
+}
+
+.dynapredict{
+  margin-top: 10px;
+  width: 8.7vw;
+}

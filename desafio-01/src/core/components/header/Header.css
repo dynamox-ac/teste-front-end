@@ -1,0 +1,44 @@
+* {
+  color: #FFFFFF;
+}
+.nav{
+display: flex;
+flex-direction: column;
+width: 100vw;
+height: 120px;
+background-color: #263252;
+}
+
+.logo {
+  width: 9rem;
+}
+
+.logo-container{
+  margin: 24px 0 0 24px;
+  padding: 12px 0 0 65px;
+}
+
+.align{
+  align-content: space-between;
+}
+
+a{
+  margin-left: 36px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: 'Raleway';
+  font-weight: 500;
+  line-height: 23px;
+}
+
+a:hover{
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.nav-btn{
+  text-align: end;
+  margin-top: 72px;
+}

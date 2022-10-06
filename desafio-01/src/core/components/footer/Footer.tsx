@@ -1,6 +1,5 @@
 import './footer.css';
 
-
 export default function Footer() {
   return (
     <footer className='text-align footer' id='footer'>

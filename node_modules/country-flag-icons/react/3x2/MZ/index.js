@@ -1,0 +1,1 @@
+export { MZ as default } from '../index.js'

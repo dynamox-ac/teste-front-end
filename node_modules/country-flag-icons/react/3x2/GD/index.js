@@ -1,0 +1,1 @@
+export { GD as default } from '../index.js'

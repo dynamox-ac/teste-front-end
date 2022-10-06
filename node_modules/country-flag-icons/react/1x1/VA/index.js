@@ -1,0 +1,1 @@
+export { VA as default } from '../index.js'

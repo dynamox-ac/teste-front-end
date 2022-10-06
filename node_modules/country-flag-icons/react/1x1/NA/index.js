@@ -1,0 +1,1 @@
+export { NA as default } from '../index.js'

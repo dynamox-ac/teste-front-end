@@ -1,0 +1,1 @@
+export { MW as default } from '../index.js'

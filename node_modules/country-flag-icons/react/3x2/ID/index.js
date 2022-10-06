@@ -1,0 +1,1 @@
+export { ID as default } from '../index.js'

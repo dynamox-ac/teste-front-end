@@ -1,0 +1,1 @@
+export { RE as default } from '../index.js'

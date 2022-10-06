@@ -1,0 +1,1 @@
+export { GW as default } from '../index.js'

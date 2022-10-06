@@ -1,0 +1,1 @@
+export { LB as default } from '../index.js'

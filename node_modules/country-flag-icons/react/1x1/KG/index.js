@@ -1,0 +1,1 @@
+export { KG as default } from '../index.js'

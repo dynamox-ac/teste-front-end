@@ -1,0 +1,1 @@
+export { MS as default } from '../index.js'

@@ -1,0 +1,1 @@
+export { VE as default } from '../index.js'

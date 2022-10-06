@@ -1,0 +1,1 @@
+export { LC as default } from '../index.js'

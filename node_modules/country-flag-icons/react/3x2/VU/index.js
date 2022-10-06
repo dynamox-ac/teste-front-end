@@ -1,0 +1,1 @@
+export { VU as default } from '../index.js'

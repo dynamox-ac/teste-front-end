@@ -1,0 +1,1 @@
+export { SI as default } from '../index.js'

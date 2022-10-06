@@ -1,0 +1,1 @@
+export { CV as default } from '../index.js'

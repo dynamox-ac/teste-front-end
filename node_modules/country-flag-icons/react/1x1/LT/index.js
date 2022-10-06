@@ -1,0 +1,1 @@
+export { LT as default } from '../index.js'

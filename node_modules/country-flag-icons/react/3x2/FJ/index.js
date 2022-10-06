@@ -1,0 +1,1 @@
+export { FJ as default } from '../index.js'

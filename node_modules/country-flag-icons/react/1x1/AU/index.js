@@ -1,0 +1,1 @@
+export { AU as default } from '../index.js'

@@ -1,0 +1,1 @@
+export { AM as default } from '../index.js'

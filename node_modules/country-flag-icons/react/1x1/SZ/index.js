@@ -1,0 +1,1 @@
+export { SZ as default } from '../index.js'

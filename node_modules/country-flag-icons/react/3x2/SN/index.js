@@ -1,0 +1,1 @@
+export { SN as default } from '../index.js'

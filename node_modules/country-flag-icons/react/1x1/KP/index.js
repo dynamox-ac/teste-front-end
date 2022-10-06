@@ -1,0 +1,1 @@
+export { KP as default } from '../index.js'

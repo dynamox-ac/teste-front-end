@@ -1,0 +1,1 @@
+export { GM as default } from '../index.js'

@@ -1,0 +1,1 @@
+export { GA as default } from '../index.js'

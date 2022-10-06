@@ -1,0 +1,1 @@
+export { TK as default } from '../index.js'

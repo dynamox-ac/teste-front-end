@@ -1,0 +1,5 @@
+{
+  "name": "input-format/commonjs",
+  "type": "commonjs",
+  "private": true
+}

@@ -1,0 +1,1 @@
+export { AG as default } from '../index.js'

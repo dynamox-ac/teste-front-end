@@ -1,0 +1,1 @@
+export { MO as default } from '../index.js'

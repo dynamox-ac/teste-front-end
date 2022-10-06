@@ -1,0 +1,1 @@
+export { PM as default } from '../index.js'

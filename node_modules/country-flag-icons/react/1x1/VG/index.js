@@ -1,0 +1,1 @@
+export { VG as default } from '../index.js'

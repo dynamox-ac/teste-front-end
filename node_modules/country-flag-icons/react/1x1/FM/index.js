@@ -1,0 +1,1 @@
+export { FM as default } from '../index.js'

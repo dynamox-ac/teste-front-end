@@ -1,0 +1,1 @@
+export { UY as default } from '../index.js'

@@ -1,0 +1,1 @@
+export { GP as default } from '../index.js'

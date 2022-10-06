@@ -1,0 +1,1 @@
+export { SX as default } from '../index.js'

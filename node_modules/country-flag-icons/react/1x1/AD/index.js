@@ -1,0 +1,1 @@
+export { AD as default } from '../index.js'

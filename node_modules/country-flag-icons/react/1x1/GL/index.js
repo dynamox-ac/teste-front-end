@@ -1,0 +1,1 @@
+export { GL as default } from '../index.js'

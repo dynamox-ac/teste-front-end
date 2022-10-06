@@ -1,0 +1,1 @@
+export { CC as default } from '../index.js'

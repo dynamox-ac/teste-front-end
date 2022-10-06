@@ -1,0 +1,1 @@
+export { BS as default } from '../index.js'

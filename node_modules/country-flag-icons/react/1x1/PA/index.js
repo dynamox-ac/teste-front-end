@@ -1,0 +1,1 @@
+export { PA as default } from '../index.js'

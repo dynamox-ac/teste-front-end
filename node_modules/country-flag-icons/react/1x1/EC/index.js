@@ -1,0 +1,1 @@
+export { EC as default } from '../index.js'

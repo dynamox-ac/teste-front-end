@@ -1,0 +1,1 @@
+export { MY as default } from '../index.js'

@@ -1,0 +1,1 @@
+export { IC as default } from '../index.js'

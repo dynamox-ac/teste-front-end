@@ -1,0 +1,1 @@
+export { MM as default } from '../index.js'

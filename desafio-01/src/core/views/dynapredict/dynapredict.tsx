@@ -4,17 +4,17 @@ import './dynapredict.css';
 
 export default function DynaPredict() {
   return (
-    <main  className='content-company' >
+    <main  className='content-company w-100'>
 
       <div className="row bg-img">
 
-        <div className="col-4 headline">
+        <div className="col-xl-4 col-sm headline">
           <h1 className='text-solution'>Solução</h1>
           <h1 className='text-solution'>DynaPredict</h1>
           <img className='dynapredict' src={logo} alt="DynaPredict" />
         </div>
 
-        <div className="col-7">
+        <div className="col-xl-7 col-sm">
           <img className="computer" src={computer} alt="Web and Mobile" />
         </div>
 

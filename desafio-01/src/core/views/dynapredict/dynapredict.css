@@ -4,27 +4,20 @@
   width: 100vw;
 }
 
-.bg-img{
-  height: 100vh;
-  background: url('../../../assets/imgs/grafismo.png')no-repeat center;
-  background-position: bottom;
-  }
+@media (min-width: 452px) {
+  
+  .bg-img{
+    height: 75vh;
+    max-height: 75vh;
+    background: url('../../../assets/imgs/grafismo.png');
+    background-position: bottom;
+    background-size: cover;
+    }
+}
 
 .computer{
   width: 56vw;
 }
-
-@media (max-width: 30em){
-  .computer{
-    width: 55vw;
-  }
-
-  h1{
-    font-size: 1vw;
-  }
-  
-}
-
 
 .headline{
   display: flex;
@@ -44,4 +37,78 @@
 .dynapredict{
   margin-top: 10px;
   width: 9vw;
+}
+
+@media (max-width: 580px) {
+  @media (min-width: 451px) {
+
+    .bg-img{
+      display: flex;
+      height: 90vh;
+      max-width: 103vw;
+      }
+  
+    .computer{
+      width: 22rem;
+      margin-left: 140px;
+    }
+  
+    .text-solution{
+      font-size: 9vw;
+      font-weight: 700;
+      font-family: 'Raleway';
+      font-style: normal;
+    }
+  }
+
+  .headline{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 10vh 0 0 2vw;
+    padding: none;
+  }
+
+}
+
+@media (max-width: 451px){
+  .content-company{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: #263252 local 100%;
+    background-image: none;
+  }
+
+  .bg-img{
+    display: flex;
+    height: 90vh;
+    background-position: left;
+    }
+
+    .computer{
+      width: 90vw;
+      margin-left: 20px;
+      }
+
+    .dynapredict{
+      width: 28vw;
+    }
+
+  .text-solution{
+    font-size: 14vw;
+    font-weight: 700;
+    font-family: 'Raleway';
+    font-style: normal;
+  }
+
+  .headline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20vh 0 0 0;
+    padding: none;
+  }
+  
 }

@@ -49,3 +49,23 @@
   width: 20vw;
   margin: 1vw;
 }
+
+@media (max-width: 481px) {
+
+  .title-sensors{
+    color: #37383D;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .text-sensors{
+    color: #454545;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+  }
+}

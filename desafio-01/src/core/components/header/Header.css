@@ -4,7 +4,7 @@
 .nav{
 display: flex;
 flex-direction: column;
-width: 100vw;
+width: 100%;
 height: 120px;
 background-color: #263252;
 }
@@ -14,16 +14,15 @@ background-color: #263252;
 }
 
 .logo-container{
-  margin: 24px 0 0 24px;
-  padding: 12px 0 0 65px;
+  margin: 4vh 0 0 2vw;
 }
 
 .align{
   align-content: space-between;
 }
 
-a{
-  margin-left: 36px;
+.btn-link{
+  margin-left: 2.3vw;
   text-decoration: none;
   color: #FFFFFF;
   font-size: 20px;
@@ -32,13 +31,79 @@ a{
   line-height: 23px;
 }
 
-a:hover{
+.btn-link:hover{
   text-decoration: none;
   color: inherit;
-
 }
 
 .nav-btn{
   text-align: end;
-  margin-top: 72px;
+  margin: 7vh 0 0 2vw;
+  padding-top: 2vh;
+}
+
+@media (max-width: 770px){
+
+  @media (min-width:580px) {
+
+    .nav{
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 15vh;
+      background-color: #263252;
+      margin: 0 auto;
+      padding: 0;
+      }
+
+    .nav-btn{
+      display: flex;
+      flex-direction: row;
+      text-align: end;
+      margin-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 580px){
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 30vh;
+    background-color: #263252;
+    margin: 0 auto;
+    padding: 0;
+    }
+    
+    .logo {
+      width: 8rem;
+    }
+    
+    .logo-container{
+      display: flex;
+      flex-direction: row;
+      place-content: center;
+      margin-top: 10vh;
+      padding: 0;
+    }
+
+    .btn-link{
+      display: flex;
+      flex-direction: row;
+      color: #FFFFFF;
+      font-size: 20px;
+      font-family: 'Raleway';
+      font-weight: 500;
+      margin: 2vh 0 0 0;
+    } 
+
+     .nav-btn{
+      display: flex;
+      flex-direction: row;
+      place-content: space-around;
+      margin-top: 4vh;
+    }
+
 }

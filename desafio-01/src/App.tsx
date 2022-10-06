@@ -10,7 +10,7 @@ import Sensors from './core/views/sensors/sensors';
 
 function App() {
   return (
-    <div className="main">
+    <div className="w-100 content">
       <Header></Header>
       <DynaPredict></DynaPredict>
       <Sensors></Sensors>

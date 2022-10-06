@@ -15,7 +15,7 @@ background-color: #263252;
 
 .logo-container{
   margin: 4vh 0 0 2vw;
-  padding: 1vh 0 0 2vw;
+  padding: 10px 0 0 100px;
 }
 
 .align{
@@ -39,8 +39,8 @@ background-color: #263252;
 
 .nav-btn{
   text-align: end;
-  margin: 7vh 0 0 2vw;
-  padding-top: 2vh;
+  margin: 62px 8px 0 16px;
+  padding-top: 16px;
 }
 
 @media (max-width: 770px){

@@ -1,4 +1,7 @@
 
+a{
+  text-decoration: none;
+}
 
 .content-product{
   height: 720px;
@@ -42,6 +45,14 @@
   height: 39px;
   border-radius: 5px;
   border: none;
+}
+
+.link-btn-more{
+  color: #FFFFFF;
+}
+
+.link-btn-more:hover{
+  color: #FFFFFF;
 }
 
 .sensors{

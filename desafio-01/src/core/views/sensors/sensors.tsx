@@ -23,7 +23,9 @@ export default function Sensors() {
           </div>
 
           <div className="col m-0 p-0 mb-3 mt-3">
-            <button className='btn-more'>Ver mais</button>
+            <button className='btn-more'>
+              <a className="link-btn-more" href="https://dynamox.net/dynapredict/">Ver mais</a>
+            </button>
           </div>
 
           <div className="row">

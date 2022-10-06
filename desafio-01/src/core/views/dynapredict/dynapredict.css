@@ -1,14 +1,14 @@
 
 .content-company{
-  height: 720px;
-  width: 100vw;
+  height: 650px;
+  width: 100%;
 }
 
 @media (min-width: 452px) {
   
   .bg-img{
-    height: 75vh;
-    max-height: 75vh;
+    height: 85vh;
+    max-height: 85vh;
     background: url('../../../assets/imgs/grafismo.png');
     background-position: bottom;
     background-size: cover;

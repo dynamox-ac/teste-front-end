@@ -33,7 +33,7 @@ export default function Sensors() {
             </div>
 
             <div className="as col">
-              <img style={{width:'18vw'}} className='sensors' src={sensorWhite} alt="AS" />
+              <img style={{width:'20vw'}} className='sensors' src={sensorWhite} alt="AS" />
               <h4 className='title-sensors'>AS</h4>
             </div>
             

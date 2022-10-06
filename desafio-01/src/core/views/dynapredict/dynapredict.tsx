@@ -5,16 +5,21 @@ import './dynapredict.css';
 export default function DynaPredict() {
   return (
     <main  className='content-company' >
+
       <div className="row bg-img">
+
         <div className="col-4 headline">
           <h1 className='text-solution'>Solução</h1>
           <h1 className='text-solution'>DynaPredict</h1>
-        <img className='dynapredict' src={logo} alt="" />
+          <img className='dynapredict' src={logo} alt="DynaPredict" />
         </div>
+
         <div className="col-7">
-          <img className="computer" src={computer} alt="" />
+          <img className="computer" src={computer} alt="Web and Mobile" />
         </div>
+
       </div>
+
     </main>
   )
 }

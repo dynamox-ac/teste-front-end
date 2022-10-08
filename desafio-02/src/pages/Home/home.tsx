@@ -16,15 +16,14 @@ export default function Home() {
     }, []);
     console.log('result get', product);
 
-    const lisItems = product.map((item) => 
-    <div className="" key={item?.id}>
-        <div className="img">
-          <img src={item?.thumb} alt="" />
+    const lisItems = product.map((item) =>
+    <div className="row product-box" key={item?.id}>
+        <div className="col-12 info">
+          <h4>{item?.name}</h4>
+          <p>Fabricado em: {item?.manufacturingDate} <br /> Válido até: {item?.expireDate}</p>
+          <p className="price">{item.currency}<span>{item.price}</span></p>
         </div>
-        <div className="info">
-          <h2>{item?.name}</h2>
-          <p>{item?.price}</p>
-        </div>
+          <div className="col-12 btn-edit">Editar produto</div>
       </div>
     );
     
@@ -38,10 +37,13 @@ export default function Home() {
         </div>
       </div>
     </header>
-
-    
-     <section className=''>
+     <section className="menu-container">
       {lisItems}
+    </section>
+    <section className="menu-container">
+      <div className="product-box row">
+        <div className="col-12 btn-add">Adicionar produto</div>
+      </div>
     </section>
 
   </main>

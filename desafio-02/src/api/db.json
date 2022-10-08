@@ -7,8 +7,7 @@
     "isPerishable" : true,
     "price": "22",
     "currency": "R$",
-    "id": 1,
-    "thumb": "./../assets/images/boloCenoura.jpeg"
+    "id": 1
 },
 
 {  
@@ -18,8 +17,7 @@
   "isPerishable" : false,
   "price": "6",
   "currency": "R$",
-  "id": 2,
-  "thumb": "./../assets/images/HAMBURGUER-vegan.jpeg"
+  "id": 2
 }
 
   ]

@@ -6,5 +6,4 @@ export interface IProduct {
   price: number;
   currency: string;
   id: number;
-  thumb: string;
 }

@@ -118,6 +118,18 @@
   background-color: rgb(136, 2, 2);
 }
 
+.btn-delete{
+  width: 120px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(136, 2, 2);
+  color: #f1f1f1;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
 .btn-add{
   padding: 10px;
   background-color: transparent;

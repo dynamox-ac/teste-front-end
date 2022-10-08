@@ -17,14 +17,6 @@
       "price": "6",
       "currency": "R$",
       "id": 2
-    },
-    {
-      "name": "",
-      "expireDate": "",
-      "manufacturingDate": "",
-      "currency": "",
-      "price": 0,
-      "id": 3
     }
   ]
 }

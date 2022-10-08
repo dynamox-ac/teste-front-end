@@ -15,6 +15,7 @@ const PrivateRoutes = () => {
       <Routes>
         <Route path="/home" element={<Home />}/>
         <Route path='/cadastrar' element={<NewProduct />} />
+        <Route path='/cadastrar/:id' element={<NewProduct />} />
       </Routes>
     </Router>
     

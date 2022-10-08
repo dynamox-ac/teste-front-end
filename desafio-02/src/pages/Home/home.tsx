@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { IoMdAdd } from 'react-icons/io';
+import { MdDelete } from 'react-icons/md';
 import ReactPaginate from 'react-paginate';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../data/context/Authcontext';
@@ -9,13 +10,27 @@ import './home.css';
 
 export default function Home() {
   const [product, setProduct] = useState<Array<IProduct>>([]);
-  const { setAuth, auth } = useContext(AuthContext)
+  const { setAuth, auth } = useContext(AuthContext);
+
+  const [productId, setProductId] = useState(0);
+
   console.log(auth);
   const navigate = useNavigate();
   const [currentItems, setCurrentItems] = useState<Array<any>>([]);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
   const itemsPerPage = 10;
+  
+  useEffect(() => {
+    api
+      .get("/products")
+      .then((response) => { setProduct(response.data)}) 
+      .catch((err) => {
+        console.error("oops! Ocorreu um erro ao listar os produtos" + err);
+      });
+    }, []);
+    console.log('result get', product);
+  
 
   useEffect(() => {
     const endOffset =  itemOffset + itemsPerPage;
@@ -32,19 +47,17 @@ export default function Home() {
     navigate('/cadastrar');
   }
 
-  useEffect(() => {
+  const deleteRequest = () => {
     api
-      .get("/products")
-      .then((response) => { setProduct(response.data)}) 
-      .catch((err) => {
-        console.error("oops! Ocorreu um erro ao listar os produtos" + err);
-      });
-    }, []);
-    console.log('result get', product);
-    
+    .delete(`/products/${productId}`)
+    .then(() => window.location.reload());
+    alert('produto excluido com sucesso!')
+  }
+
+ 
     const lisItems = product.map((item) => {
       return (
-    <div className="row product-box" key={item?.id}>
+    <div className="row product-box" key={item?.id} onClick={() => setProductId(item?.id)}>
 
         <div className="col-12 info">
           <h4 className='title'>{item?.name}</h4>
@@ -58,7 +71,10 @@ export default function Home() {
             <p className="price">{item.currency}<span>{item.price}</span></p>
           </div>
           
-          <div className="col-12 btn-edit">Editar produto</div>
+          <div className="col">
+            <button className='btn-edit'>Editar produto</button>
+          </div>
+          <div style={{cursor:'pointer'}} onClick={deleteRequest}><MdDelete /></div>
       </div>
 
         )

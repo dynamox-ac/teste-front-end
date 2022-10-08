@@ -47,6 +47,12 @@ export default function Home() {
     navigate('/cadastrar');
   }
 
+  const editRoute = () => {
+    const editId = String(productId)
+    console.log('editId,', editId);
+    navigate(`/editar/${editId}`)
+  }
+
   const deleteRequest = () => {
     api
     .delete(`/products/${productId}`)
@@ -72,7 +78,7 @@ export default function Home() {
           </div>
           
           <div className="col">
-            <button className='btn-edit'>Editar produto</button>
+            <button className='btn-edit' onClick={editRoute}>Editar produto</button>
           </div>
           <div style={{cursor:'pointer'}} onClick={deleteRequest}><MdDelete /></div>
       </div>
@@ -101,7 +107,7 @@ export default function Home() {
     <section className="menu-container">
       <div className="product-add-box row" onClick={addNewProduct}>
         <div className="col">
-          <button className="btn-add">Adicionar produto</button>
+          <button className="btn-add">Cadastrar novo produto</button>
           <br />
           <IoMdAdd />
           </div>

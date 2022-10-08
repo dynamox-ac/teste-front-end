@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { IoMdAdd } from 'react-icons/io';
 import { IProduct } from '../../interface/product.interface';
 import api from "../../services/api.service";
 import './home.css';
@@ -27,22 +28,26 @@ export default function Home() {
       </div>
     );
     
-  return <main>
+  return <main className="container-box">
 
-    <header className="menu">
+    {/* <header className="menu">
       <div className="row menu-container">
         <div className="col btn-container">
           <button className='btn-menu'>Adicionar novo produto</button>
           <button className='btn-menu'>Adicionar novo produto</button>
         </div>
       </div>
-    </header>
+    </header> */}
      <section className="menu-container">
       {lisItems}
     </section>
     <section className="menu-container">
-      <div className="product-box row">
-        <div className="col-12 btn-add">Adicionar produto</div>
+      <div className="product-add-box row">
+        <div className="col">
+          <button className="btn-add">Adicionar produto</button>
+          <br />
+          <IoMdAdd />
+          </div>
       </div>
     </section>
 

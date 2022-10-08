@@ -1,4 +1,6 @@
-
+.container-box{
+  margin: 5vh 5vw 5vh 5vw;
+}
 
 .menu-container{
   display: flex;
@@ -70,6 +72,29 @@
   top: 10px;
 }
 
+.product-add-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 28vw;
+  height: 38vh;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 5px #f1f1f1;
+  border-left: 1px solid black;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  cursor: pointer;
+}
+
+.product-add-box:hover{
+  top: 10px;
+}
+
+
 .price{
   font-weight: 600;
   font-size: 20px;
@@ -91,4 +116,18 @@
   background-color: black;
 }
 
+.btn-add{
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+svg{
+  font-size: 50px;
+  color: black;
+  box-shadow: 3px 8px #f1f1f1;
+  border-radius: 50px;
+}
 

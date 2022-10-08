@@ -42,7 +42,8 @@ export default function Home() {
     }, []);
     console.log('result get', product);
     
-    const lisItems = product.map((item) =>
+    const lisItems = product.map((item) => {
+      return (
     <div className="row product-box" key={item?.id}>
 
         <div className="col-12 info">
@@ -59,7 +60,9 @@ export default function Home() {
           
           <div className="col-12 btn-edit">Editar produto</div>
       </div>
-    );
+
+        )
+      });
 
     const handleLogOut =(e: any) => {
       setAuth(false);
@@ -80,9 +83,9 @@ export default function Home() {
       {lisItems}
     </section>
     <section className="menu-container">
-      <div className="product-add-box row">
+      <div className="product-add-box row" onClick={addNewProduct}>
         <div className="col">
-          <button className="btn-add" onClick={addNewProduct}>Adicionar produto</button>
+          <button className="btn-add">Adicionar produto</button>
           <br />
           <IoMdAdd />
           </div>

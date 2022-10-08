@@ -11,7 +11,8 @@
 #login .form-style {
   background-color: #f1f1f1;
   width: 100%;
-  min-width: 50vw;
+  min-width: 20vw;
+  max-width: 35vw;
   padding: 4rem;
   border-radius: 30px;
 }

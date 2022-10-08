@@ -1,0 +1,28 @@
+{
+  "products": [
+  {  
+    "name": "Bolo de cenoura",
+    "manufacturingDate": "02/09/2022",
+    "expireDate": "15/10/2022",
+    "isPerishable" : true,
+    "price": "22",
+    "currency": "R$",
+    "id": 1,
+    "thumb": "./../assets/images/boloCenoura.jpeg"
+},
+
+{  
+  "name": "Hamburger Vegano artesanal",
+  "manufacturingDate": "07/10/2022",
+  "expireDate": "07/12/2022",
+  "isPerishable" : false,
+  "price": "6",
+  "currency": "R$",
+  "id": 2,
+  "thumb": "./../assets/images/HAMBURGUER-vegan.jpeg"
+}
+
+  ]
+
+  
+}

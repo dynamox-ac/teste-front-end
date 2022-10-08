@@ -1,0 +1,46 @@
+
+#login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 2rem;
+}
+
+#login .form-style {
+  background-color: #f1f1f1;
+  width: 100%;
+  min-width: 50vw;
+  padding: 4rem;
+  border-radius: 30px;
+}
+
+.field label {
+  display: block;
+}
+
+.field input{
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#login .actions{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn-login{
+  border: 1px solid  black;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 4px;
+  width: 100px;
+}
+
+.btn-login:hover{
+  background-color: dimgray;
+  color: aliceblue;
+}

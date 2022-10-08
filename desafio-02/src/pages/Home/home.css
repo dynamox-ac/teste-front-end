@@ -7,13 +7,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: right;
+  text-align: left;
   width: 100%;
 }
 
 .menu{
   /* background-color: #5D7E68; */
-  border-bottom: 2px solid black;
   width: 100%;
   height: 10vh;
 }
@@ -24,19 +23,21 @@
 
 .btn-menu{
   border: none;
-  border-radius: 6px;
-  padding: 8px;
+  border-radius: 8px;
+  padding: 10px;
   margin-right: 15px;
-  background-color: #f1f1f1;
-  border: 1px solid #5D7E68;
-  box-shadow: 1px 2px #828282;
   font-weight: 600;
-  color: #000000;
+  color: #f1f1f1;
+  background-color: rgb(136, 2, 2);
+  box-shadow: 2px 5px;
+  position: relative;
+  left: 0;
+  transition: top ease 0.5s;
 }
 
 .btn-menu:hover {
-  color: #f1f1f1;
-  background-color: #828282;
+  box-shadow: 4px 8px;
+  left: -5px;
 }
 
 /* Product section */
@@ -62,7 +63,7 @@
   margin: 20px;
   border-radius: 15px;
   box-shadow: 2px 5px #f1f1f1;
-  border-left: 1px solid black;
+  border-left: 2px solid rgb(136, 2, 2);
   position: relative;
   top: 0;
   transition: top ease 0.5s;
@@ -79,7 +80,8 @@
   justify-content: center;
   text-align: center;
   width: 28vw;
-  height: 38vh;
+  min-height: 38vh;
+  height: 100%;
   margin: 20px;
   border-radius: 15px;
   box-shadow: 2px 5px #f1f1f1;
@@ -96,9 +98,9 @@
 
 
 .price{
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
-  color: black;
+  color: rgb(136, 2, 2);
 }
 
 .btn-edit{
@@ -113,7 +115,7 @@
 
 .btn-edit:hover{
   color: #f1f1f1;
-  background-color: black;
+  background-color: rgb(136, 2, 2);
 }
 
 .btn-add{
@@ -131,3 +133,45 @@ svg{
   border-radius: 50px;
 }
 
+/* pagination */
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 5rem 5rem;
+  font-size: 1.2rem;
+  gap: 5px;
+  padding: 2rem;
+}
+
+.pagination .page-num{
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(136, 2, 2);
+}
+
+.active{
+  box-shadow: 2px 5px #d7cece;
+}
+
+/* products */
+
+.title{
+  margin-bottom: 5px;
+  padding: 5px;
+  border-bottom: 1px solid rgb(136, 2, 2);
+}
+
+.details{
+  padding: 5px;
+}
+
+.pricing{
+  padding: 5px;
+  margin-bottom: 10px;
+}

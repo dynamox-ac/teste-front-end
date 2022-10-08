@@ -3,6 +3,7 @@ import {
   Route,
   Routes
 } from 'react-router-dom';
+import NewProduct from '../pages/Home/add-product/new-product';
 import Home from '../pages/Home/home';
 
 
@@ -13,6 +14,7 @@ const PrivateRoutes = () => {
     <Router>
       <Routes>
         <Route path="/home" element={<Home />}/>
+        <Route path='/cadastrar' element={<NewProduct />} />
       </Routes>
     </Router>
     

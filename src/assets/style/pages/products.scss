@@ -1,0 +1,29 @@
+.products {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .products-container {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .table-content {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+
+            .column-text {
+                cursor: pointer;
+            }
+        }
+    }
+}

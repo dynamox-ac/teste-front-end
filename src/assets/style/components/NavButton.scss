@@ -1,0 +1,118 @@
+.navigation {
+    position: fixed;
+    bottom: 1rem;
+    right: calc(50% - 25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    .menuToggle {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            content: "+";
+            position: absolute;
+            font-size: 2rem;
+            font-weight: 100;
+            color: #555;
+            transition: 1.5s;
+        }
+
+        &.active {
+            &::before {
+                transform: rotate(225deg);
+            }
+        }
+    }
+
+    .menu {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 70px;
+        z-index: -1;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        transition: transform .5s, width .5s, height .5s;
+        transition-delay: 1s, .5s, .5s;
+        transition-timing-function: cubic-bezier(.075, .82, .165, 1);
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background-color: #fff;
+            left: calc(50% - 6px);
+            bottom: 4px;
+            transform: rotate(45deg);
+            border-radius: 2px;
+            transition: .5s;
+        }
+
+        &.active {
+            width: 240px;
+            height: 50px;
+            z-index: 1;
+            transform: translateY(-80px);
+            transition-delay: 0s, .5s, .5s;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+
+            &::before {
+                bottom: -6px;
+                transition-delay: .5s;
+            }
+
+            ul {
+
+                li {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                    transition: .25;
+                    transition-delay: .65s;
+                }
+            }
+        }
+
+        ul {
+            height: 100%;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            li {
+                cursor: pointer;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-20px);
+                transition: .25s;
+                transition-delay: .35s;
+
+                a {
+                    display: block;
+                    font-size: 1rem;
+                    color: #555;
+                }
+
+                &:hover {
+                    a {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+}

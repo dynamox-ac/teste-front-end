@@ -1,0 +1,50 @@
+.product-form {
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+
+        .input-item {
+            width: 100%;
+        }
+
+        .add-edit {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .field01 {
+                display: flex;
+                gap: 1rem;  
+            }
+            .field02 {
+                display: flex;
+                gap: 1rem;  
+            }
+        }
+
+        &.add {
+
+            .edit-remove {
+                display: none;
+            }
+        }
+
+        &.edit {
+
+        }
+
+        &.delete {
+            
+            .add-edit {
+                display: none;
+            }
+        }
+    }
+}

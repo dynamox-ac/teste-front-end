@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "email": "teste@gmail.com",
+      "password": "123456",
+      "token": "W1GU414HNDMN164653H2H6O6O23I"
+    }
+  ],
+  "products": [
+    {
+      "name": "Mouse",
+      "dateF": "2022-10-08",
+      "price": "25,50",
+      "perishable": false,
+      "id": 1
+    }
+  ]
+}

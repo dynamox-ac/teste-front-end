@@ -80,10 +80,6 @@ const ProductForm = (props) => {
     } else if (props.type === "edit") {
       if (validateForm()) {
         let obj = value
-        obj.dateF = formatDate(obj.dateF)
-        if(!!obj.dateV) {
-          obj.dateV = formatDate(obj.dateV)
-        }
         editProduct(obj.id, obj).then(() => {
           getList()
           setValue({})
@@ -125,9 +121,9 @@ const ProductForm = (props) => {
               <MenuItem key={obj.id} value={obj.name} onClick={() => {
                 setProduct(obj)
                 setValue(obj)
-                setValue((prev) => ({ ...prev, dateF: formatDate(obj.dateF) }))
+                setValue((prev) => ({ ...prev, dateF: obj.dateF }))
                 if(!!obj.dateV){
-                  setValue((prev) => ({ ...prev, dateV: formatDate(obj.dateV) }))
+                  setValue((prev) => ({ ...prev, dateV: obj.dateV }))
                 }
                 setDisabled(false)
               }}>

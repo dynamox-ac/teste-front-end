@@ -7,6 +7,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
+import { formatDate } from "../util/util"
 
 import { listProduct } from '../apiRequest/crudFunc';
 
@@ -79,7 +80,7 @@ export const TableProducts = () => {
                         const value = row[column.id];
                         return (
                           <TableCell key={column.id} align={column.align}>
-                            {column.id === "perishable"? (value? "Sim" : "Não") : value}
+                            {column.id === "perishable"? (value? "Sim" : "Não") : (column.id === ("dateF" || "dateV")? formatDate(value) : value)}
                           </TableCell>
                         );
                       })}

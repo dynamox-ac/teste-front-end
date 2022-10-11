@@ -6,7 +6,7 @@ const DeleteProducts = () => {
         <>
             <section className="products">
                 <div className="products-container">
-                    <h1>Deletar de Produto</h1>
+                    <h1>Deletar Produto</h1>
                     <ProductForm type="delete"/>
                 </div>
             </section>

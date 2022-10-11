@@ -13,6 +13,22 @@
       "price": "25,60",
       "perishable": false,
       "id": 1
+    },
+    {
+      "name": "Queijo",
+      "dateF": "2022-10-09",
+      "perishable": true,
+      "dateV": "2022-10-15",
+      "price": "9,90",
+      "id": 2
+    },
+    {
+      "dateF": "2022-10-01",
+      "name": "Chocolate",
+      "perishable": true,
+      "dateV": "2022-10-10",
+      "price": "2,50",
+      "id": 3
     }
   ]
 }

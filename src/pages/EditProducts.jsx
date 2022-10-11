@@ -6,7 +6,7 @@ const EditProducts = () => {
         <>
             <section className="products">
                 <div className="products-container">
-                    <h1>Editar de Produto</h1>
+                    <h1>Editar Produto</h1>
                     <ProductForm type="edit"/>
                 </div>
             </section>
